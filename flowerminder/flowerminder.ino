@@ -98,8 +98,9 @@ void stayInDeepSleepForMilliseconds(unsigned long sleepDuration, WatchDogTimeout
   @return The potentiometer value
 */
 int getPotValue() {
-  int potValue = 0;
-  // TODO
+  digitalWrite(potPowerPin, HIGH); //turn potentiometer on
+  int potValue = analogRead(potSignalPin); //reading the value
+  digitalWrite(potPowerPin, LOW); //turn it off
   return potValue;
 }
 
@@ -131,7 +132,7 @@ void stayInDeepSleepForMinutes(unsigned long minutes) {
   Disable ADC so to save power
 */
 void disableADC() {
-  // TODO
+ADCSRA = 0;
 }
 
 void setup() {
