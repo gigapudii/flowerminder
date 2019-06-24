@@ -109,7 +109,9 @@ int getPotValue() {
   @param days    The amount of days to stay in deep sleep
 */
 void stayInDeepSleepForDays(unsigned long days) {
-  // TODO
+  for(int i=1; i<=days; i++){
+    stayInDeepSleepForHours(24); //sleeps for one day
+  }
 }
 
 /**
@@ -117,7 +119,9 @@ void stayInDeepSleepForDays(unsigned long days) {
   @param hours    The amount of hours to stay in deep sleep
 */
 void stayInDeepSleepForHours(unsigned long hours) {
-  // TODO
+  for(int i=1; i<=hours; i++){
+    stayInDeepSleepForMinutes(60); //sleeps for one hour
+  }
 }
 
 /**
@@ -125,7 +129,9 @@ void stayInDeepSleepForHours(unsigned long hours) {
   @param minutes    The amount of days to minutes in deep sleep
 */
 void stayInDeepSleepForMinutes(unsigned long minutes) {
-  // TODO
+  for(int i=1; i<=minutes; i++){
+    stayInDeepSleepForMilliseconds(60000); //sleeps for one minute
+  }
 }
 
 /**
@@ -136,7 +142,7 @@ ADCSRA = 0;
 }
 
 void setup() {
-  // TODO
+  //TODO
 }
 
 void loop() {
