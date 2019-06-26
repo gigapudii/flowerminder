@@ -109,7 +109,7 @@ int getPotValue() {
   @param days    The amount of days to stay in deep sleep
 */
 void stayInDeepSleepForDays(unsigned long days) {
-  for(int i=1; i<=days; i++){
+  for (int i = 1; i <= days; i++) {
     stayInDeepSleepForHours(24); //sleeps for one day
   }
 }
@@ -119,7 +119,7 @@ void stayInDeepSleepForDays(unsigned long days) {
   @param hours    The amount of hours to stay in deep sleep
 */
 void stayInDeepSleepForHours(unsigned long hours) {
-  for(int i=1; i<=hours; i++){
+  for (int i = 1; i <= hours; i++) {
     stayInDeepSleepForMinutes(60); //sleeps for one hour
   }
 }
@@ -129,7 +129,7 @@ void stayInDeepSleepForHours(unsigned long hours) {
   @param minutes    The amount of days to minutes in deep sleep
 */
 void stayInDeepSleepForMinutes(unsigned long minutes) {
-  for(int i=1; i<=minutes; i++){
+  for (int i = 1; i <= minutes; i++) { //counts if the amounts of minutes is less than or equal amount of 1
     stayInDeepSleepForMilliseconds(60000); //sleeps for one minute
   }
 }
@@ -138,13 +138,66 @@ void stayInDeepSleepForMinutes(unsigned long minutes) {
   Disable ADC so to save power
 */
 void disableADC() {
-ADCSRA = 0;
+  ADCSRA = 0;
 }
 
 void setup() {
-  //TODO
+  pinMode(potSignalPin, INPUT);
+  pinMode(potPowerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  int potValue = getPotValue(); //reads a value from potentiometer and saves it into the variable potValue
+  disableADC();
+  int days = 0;
+  if (potValue < 128)
+  {
+    days = 1;
+  }
+  if (potValue >= 128 && potValue < 256)
+  {
+    days = 2;
+  }
+  if (potValue >= 256 && potValue < 384)
+  {
+    days = 3;
+  }
+  if (potValue >= 384 && potValue < 512)
+  {
+    days = 4;
+  }
+  if (potValue >= 512 && potValue < 640)
+  {
+    days = 5;
+  }
+  if (potValue >= 640 && potValue < 768)
+  {
+    days = 6;
+  }
+  if (potValue >= 768 && potValue < 896)
+  {
+    days = 7;
+  }
+  if (potValue >= 896)
+  {
+    for (int i = 1; i <= 10; i++) { //runs the loop below if it's less than or equals 10 times
+      digitalWrite(ledPin, HIGH);
+      stayInDeepSleepForMilliseconds(20);
+      digitalWrite(ledPin, LOW);
+      stayInDeepSleepForMilliseconds(20);
+    }
+    goToSleep(); //stay in deep sleep until woken up
+  }
+  for (int i = 1; i <= days; i++) {
+    digitalWrite(ledPin, HIGH);
+    stayInDeepSleepForMilliseconds(180);
+    digitalWrite(ledPin, LOW);
+    stayInDeepSleepForMilliseconds(180);
+  }
+  stayInDeepSleepForDays(days); //blink the led as many times as days is, and sleep for as many days as days is
 }
 
 void loop() {
-  // TODO
+  digitalWrite(ledPin, HIGH);
+  stayInDeepSleepForMilliseconds(1000);
+  digitalWrite(ledPin, LOW);
+  stayInDeepSleepForMilliseconds(1000);
 }
