@@ -20,4 +20,4 @@ To design the board, Eagle CAD was used. The goal was to make it as small as pos
 * 1x Rotary potentiometer COM-09288
 * 1x 5mm LED-light
 * 1x 6mm tactile switch button
-* 2x Resistor (one for the LED and one for the button)
+* 2x Resistor (one for the LED 220kOhm, and one for the button 10kOhm)
