@@ -13,6 +13,7 @@ To design the board, Eagle CAD was used. The goal was to make it as small as pos
 
 ## Components
 * 1x [Flowerminder board](https://www.pcbway.com/project/shareproject/Flowerminder.html)
+* 1x [3D-printed case](https://www.tinkercad.com/things/kMWTQKFdEJA) 
 * 1x Attiny85
 * 1x Coin cell battery CR2032
 * 1x Coin cell battery holder
