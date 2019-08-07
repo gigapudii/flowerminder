@@ -2,7 +2,7 @@
 This gadget helps remind you to water your plants with a blinking LED-light.
 
 ## WHY
-I have for the past few years gathered a larger amount of plants in my house. However, I often struggle to keep them alive due to my forgetfulness and everyday life coming inbetween. In order to keep them healthy, I decided to initiate this project which I am sure many of you are in need of as well. With an LED-light blinking on a set day, neglect can simply be avoided.
+For the past few years I have gathered a larger amount of plants in my house. However, I often struggle to keep them alive due to my forgetfulness and everyday life coming inbetween. In order to keep them healthy, I decided to initiate this project which I am sure many of you are in need of as well. With an LED-light blinking on a set day, neglect can simply be avoided.
 
 ## HOW
 The solution to this is the Flowerminder. It allows you to put a reminder for up to 7 days, and blinks until you have noticed the plant and hit reset. Its small, compact, and simple design is easy to use and is visible from a distance as well.
