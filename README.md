@@ -15,7 +15,7 @@ For the Flowerminder, you will need an Attiny85, along with a potentiometer (rot
 To design the board, Eagle CAD was used. The goal was to make it as small as possible so it wouldn't be too chunky. The holes in the board are optional, but the idea was to 3D-design a case for it that would have screws holding it in place. 
 
 ![minder-case-open](https://i.imgur.com/8PXFA6p.jpg)
-![minder-case-closed](https://i.imgur.com/pyRoLET.jpg)
+![minder-case-closed](https://i.imgur.com/z18Igbv.jpg)
 
 ## Components
 * 1x [Flowerminder board](https://www.pcbway.com/project/shareproject/Flowerminder.html)
