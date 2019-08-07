@@ -9,13 +9,13 @@ The solution to this is the Flowerminder. It allows you to put a reminder for up
 
 For the Flowerminder, you will need an Attiny85, along with a potentiometer (rotary potentiometer COM-09288), coin cell battery (CR2032), a LED-light (5mm), and a button (6mm tactile switch) to reset your settings. 
 
-![minder-back](https://imgur.com/a/29p8I1t)
-![minder-front](https://imgur.com/a/UwQUgGh)
+![minder-back](https://i.imgur.com/41JBr7S.jpg)
+![minder-front](https://i.imgur.com/3L35FUD.jpg)
 
 To design the board, Eagle CAD was used. The goal was to make it as small as possible so it wouldn't be too chunky. The holes in the board are optional, but the idea was to 3D-design a case for it that would have screws holding it in place. 
 
-![minder-case-open](https://imgur.com/a/4QxicFC)
-![minder-case-closed](https://imgur.com/a/02Rcp6m)
+![minder-case-open](https://i.imgur.com/8PXFA6p.jpg)
+![minder-case-closed](https://i.imgur.com/pyRoLET.jpg)
 
 ## Components
 * 1x [Flowerminder board](https://www.pcbway.com/project/shareproject/Flowerminder.html)
