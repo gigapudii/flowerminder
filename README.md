@@ -1,13 +1,13 @@
 # Flowerminder
-A reminder for when to water your plants.
+This gadget helps remind you to water your plants with a blinking LED-light.
 
 ## WHY
-I have for the past few years gathered a larger amount of plants in my house. However, I often struggle to keep them alive.
+I have for the past few years gathered a larger amount of plants in my house. However, I often struggle to keep them alive due to my forgetfulness and everyday life coming inbetween. In order to keep them healthy, I decided to initiate this project which I am sure many of you are in need of as well. With an LED-light blinking on a set day, neglect can simply be avoided.
 
 ## HOW
-The solution to this is a Flowerminder. It allows you to put a reminder for up to 7 days, and blinks until you have noticed the plant. Its small, compact, and simple design is easy to use and is visible from a distance as well.
+The solution to this is the Flowerminder. It allows you to put a reminder for up to 7 days, and blinks until you have noticed the plant and hit reset. Its small, compact, and simple design is easy to use and is visible from a distance as well.
 
-For this minder, you will need an Attiny85, along with a potentiometer (rotary potentiometer COM-09288), coin cell battery (CR2032), a LED-light (5mm), and a button (6mm tactile switch) to reset your settings. 
+For the Flowerminder, you will need an Attiny85, along with a potentiometer (rotary potentiometer COM-09288), coin cell battery (CR2032), a LED-light (5mm), and a button (6mm tactile switch) to reset your settings. 
 
 To design the board, Eagle CAD was used. The goal was to make it as small as possible so it wouldn't be too chunky. The holes in the board are optional, but the idea was to 3D-design a case for it that would have screws holding it in place. 
 
