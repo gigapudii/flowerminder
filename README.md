@@ -16,6 +16,7 @@ To design the board, Eagle CAD was used. The goal was to make it as small as pos
 
 ![minder-case-open](https://i.imgur.com/8PXFA6p.jpg)
 ![minder-case-closed](https://i.imgur.com/z18Igbv.jpg)
+![all-minders](https://i.imgur.com/vT5Wrhz.jpg)
 
 ## Components
 * 1x [Flowerminder board](https://www.pcbway.com/project/shareproject/Flowerminder.html)
